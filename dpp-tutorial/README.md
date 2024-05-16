@@ -22,11 +22,12 @@
   SPDX-License-Identifier: Apache-2.0
 -->
 
-<h1 style="display:flex; align-items: center;"><img src="../docs/media/catenaxLogo.svg"/>&nbsp;&nbsp;Tractus-X​ Digital Product Passport​ Workstream​</h1>
+<div align=right><img height=200 src="../docs/media/dpp-tx-logo.png"/>&nbsp;&nbsp;<h1>Tractus-X​ Digital Product Passport​ Workstream​</h1><h4>Second Tractus-X Community Days - 16, 17 May 2024 - Stuttgart</h4></div>
+
 
 ## Description
 
-The digital product passport  application provides a consumer user interface to request a battery passport from a battery manufacturer using the standardized components and technologies in a Catena-X network. The passport will be displayed in a human-readable from any browser. The data exchange standards given by Catena-X are used to provide the battery passport to different personas (roles) in the network.
+The digital product passport application provides a consumer user interface to request a battery passport from a battery manufacturer using the standardized components and technologies in a Catena-X network. The passport will be displayed in a human-readable from any browser. The data exchange standards given by Catena-X are used to provide the battery passport to different personas (roles) in the network.
 
 In particular, the appliction is used to access the battery passport data provided by battery manufacturer. By scanning QR-code or knowing the manufacturer and battery-ID, a user can request the passport  through **Eclipse Dataspace Connectors (EDCs)** over the Catena-X network. The passport provider will provide data attributes that is only visible to a permitted signed-in user. 
 
@@ -54,7 +55,7 @@ You are one of the suppliers from Company-X. To maintain your client, you are re
 
 ## Preparation
 
-Split into groups of three individuals, ensuring each group receives a sheet of paper containing a distinct Part from the Arena-X Car.
+Split into groups of five individuals, ensuring each group receives a sheet of paper containing a distinct Part from the test data [test-data](./resources/test-data/carParts.json).
 
 ## Phase 1: Data Provision 
 
@@ -130,6 +131,5 @@ Print the QR Code from the nearby printer and paste it in the specific Part in t
    * Description: Include a brief description of the car, its features, and specifications.
    * ID: Assign a unique identifier for the car.
    * Aggregate Value: Calculate and add up the PCF values of all individual parts to obtain the aggregate carbon footprint value for the entire car.
-
 
 
