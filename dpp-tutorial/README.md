@@ -27,15 +27,15 @@
 
 ## Description
 
-The digital product passport application provides a consumer user interface to request a battery passport from a battery manufacturer using the standardized components and technologies in a Catena-X network. The passport will be displayed in a human-readable from any browser. The data exchange standards given by Catena-X are used to provide the battery passport to different personas (roles) in the network.
+The digital product passport application provides a consumer user interface to request a battery passport from a battery manufacturer using the standardized components and technologies in Catena-X network. The passport will be displayed in a human-readable form from any browser. The data exchange standards given by Catena-X are used to provide the battery passport to different personas (roles) in the network.
 
 In particular, the appliction is used to access the battery passport data provided by battery manufacturer. By scanning QR-code or knowing the manufacturer and battery-ID, a user can request the passport  through **Eclipse Dataspace Connectors (EDCs)** over the Catena-X network. The passport provider will provide data attributes that is only visible to a permitted signed-in user. 
 
 ## Problem Statement
 
-Company-X has manufactured cars for the market in Germany. The cars were built using components from different companies. A surprise inspection is scheduled by a governmental environment auditor in 5 months. This generates a problem for Company-X, because all the data from the parts is not available. Company-X sends an email to their supplier companies, however their send incomplete data in different formats and structures, which confuses Company-X engineers when calculating the carbon footprint and makes the compliance to the regulations really complicated. It is hard to keep track from the latest regulations and convince supplier companies to give all their data without loosing control over it. So, the engineers decide to use Catena-X for the data exchange. Per email Company-X request its suppliers to provide the data while still maintaining data sovereignty, simply by following the Catena-X standards for the Digital Product Passport which comply with the regulations of the inspection. ​
+Company-X has manufactured cars for the market in Germany. The cars were built using components from different companies. A surprise inspection is scheduled by a governmental environment auditor in 5 months. This generates a problem for Company-X, because not all the data from the parts are available. Company-X sends an email to their supplier companies, however they send incomplete data in different formats and structures, which confuses Company-X engineers when calculating the carbon footprint and makes the compliance to the regulations really complicated. It is hard to keep track from the latest regulations and convince supplier companies to give all their data without loosing control over it. So, the engineers decide to use Catena-X for the data exchange. Per email Company-X requests its suppliers to provide the data while still maintaining data sovereignty, simply by following the Catena-X standards for the Digital Product Passport which comply with the regulations of the inspection. ​
 
-You are one of the suppliers from Company-X. To maintain your client, you are required to create a Digital Product Pass for your Part, so that Company-X can  obtain the total PCF value from its car. Creating a Car Digital Product Pass and fulfilling the sustainability regulations imposed in the inspection.
+You are one of the suppliers from Company-X. To maintain your client, you are required to create a Digital Product Pass for your Part, so that Company-X can  obtain the total PCF value from its car. Create a Car Digital Product Pass to fulfill the sustainability regulations imposed in the inspection.
 
 ## Pre-Requisites
 
@@ -55,7 +55,7 @@ You are one of the suppliers from Company-X. To maintain your client, you are re
 
 ## Preparation
 
-Split into groups of five individuals, ensuring each group receives a sheet of paper containing a distinct Part from the  [test-data](./resources/test-data/carParts.json).
+Split into groups of five individuals, ensuring each group receives a sheet of paper containing a distinct part from the  [test-data](./resources/test-data/carParts.json).
 
 ## Phase 1: Deployment 
 
@@ -64,7 +64,7 @@ Split into groups of five individuals, ensuring each group receives a sheet of p
 
 ## Phase 2: Data Provision 
 
-In this Phase, you as a provider will create a Digital Product Passport of a spectific Part of the Arena-X Car. For this phase, you can use your own computer through Visual Studio Code / Notepad ++ or a given Virtual Machine.
+In this Phase, you as a provider will create a Digital Product Passport of a spectific part of the Arena-X Car. For this phase, you can use your own computer through Visual Studio Code / Notepad ++ or a given Virtual Machine.
 
 ##### Duration: 45 mins
 
@@ -95,7 +95,7 @@ Provide the Digital Twin and its relations in the Digital Twin Registry.
    
 #### Step 5 - Print the QR-Code 
 
-Print the QR Code from the nearby printer and paste it in the specific Part in the Arena -X. Ensure that the QR code is securely attached and easily scannable. Test the scanning functionality to verify that the encoded information can be retrieved accurately.
+Print the QR Code from the nearby printer and paste it in the specific Part in the Arena-X. Ensure that the QR code is securely attached and easily scannable. Test the scanning functionality to verify that the encoded information can be retrieved accurately.
 
 Great! The data provisioning process has been successfully set up. It is now ready for data exchange within the dataspace. This means that all necessary configurations and integrations have been completed, ensuring efficient data sharing.
 
@@ -131,6 +131,16 @@ In this phase, you as a consumer, will access the Digital Product Pass (DPP) con
    * Description: Include a brief description of the car, its features, and specifications.
    * ID: Assign a unique identifier for the car.
    * Aggregate Value: Calculate and add up the PCF values of all individual parts to obtain the aggregate carbon footprint value for the entire car.
+ 
+## Links
+
+| How to Guides | Link |
+| -------- | ----- |
+| How to deploy DPP Application | [deployment.md](./deployment.md) |
+| How to create Aspect Model | [aspect-model.md](./aspect-model.md) |
+| How to create a Digital Twin | [data-provision.md](./data-provision.md) |
+| How to generate a QR code | [qr-code.md](./qr-code.md) |
+| DPP Data Consumption | [data-consumption.md](./data-consumption.md) |
 
 ## NOTICE
 
